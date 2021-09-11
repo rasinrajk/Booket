@@ -1,0 +1,36 @@
+<div class="header">
+  <div class="header-left">
+    <a href="#" class="burger-menu"><i data-feather="menu"></i></a>
+    <!-- <div class="header-search">
+      <i data-feather="search"></i>
+      <input type="search" class="form-control" placeholder="What are you looking for?">
+    </div> -->
+    <!-- header-search -->
+  </div><!-- header-left -->
+  <div class="header-right">
+    <div class="dropdown dropdown-loggeduser">
+      <a href="#" class="dropdown-link" data-toggle="dropdown">
+        <div class="avatar avatar-sm">
+          <span class="avatar-initial rounded-circle bg-dark" alt="">{{userName | uppercase|slice:0:2 }}</span>
+        </div><!-- avatar -->
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <div class="dropdown-menu-header">
+          <div class="media align-items-center">
+            <div class="avatar">
+              <span class="avatar-initial rounded-circle bg-dark" alt="">{{userName | uppercase | slice:0:2}}</span>
+            </div><!-- avatar -->
+            <div class="media-body mg-l-10">
+              <h6>{{userName}}</h6>
+              <span>{{userMail}}</span>
+            </div>
+          </div><!-- media -->
+        </div>
+        <div class="dropdown-menu-body">
+          <a [routerLink]="['/settings']" class="dropdown-item"><i data-feather="briefcase"></i> Account Settings</a>
+          <button class="dropdown-item" (click)="dologout()"><i data-feather="log-out"></i> Sign Out</button>
+        </div>
+      </div><!-- dropdown-menu -->
+    </div>
+  </div><!-- header-right -->
+</div><!-- header -->

@@ -1,0 +1,221 @@
+<app-sidebar></app-sidebar>
+<div class="content">
+    <app-header></app-header>
+    <div class="content-header">
+      <div>
+        
+        <h4 class="content-title content-title-sm">Profile Settings</h4>
+      </div>
+    </div><!-- content-header -->
+    <div class="content-body">
+      <div class="row row-xs">
+        <div class="col-md-4">
+          <ul class="list-group list-group-settings">
+            <li class="list-group-item list-group-item-action">
+              <a href="#paneProfile" data-toggle="tab" class="media active">
+                <i data-feather="user"></i>
+                <div class="media-body">
+                  <h6>Profile Information</h6>
+                  <span>About your personal information</span>
+                </div>
+              </a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="#paneAccount" data-toggle="tab" class="media">
+                <i data-feather="settings"></i>
+                <div class="media-body">
+                  <h6>Account Settings</h6>
+                  <span>Manage your account setting options</span>
+                </div>
+              </a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+                    <a href="#paneActivity" data-toggle="tab" class="media">
+                       <i data-feather="bell"></i>
+                      <div class="media-body">
+                        <h6>Account Activities</h6>
+                        <span>Track your account setting options</span>
+                      </div>
+                    </a>
+                  </li>
+          
+          </ul>
+        </div><!-- col -->
+        <div class="col-md-8">
+          <div class="card card-body pd-sm-40 pd-md-30 pd-xl-y-35 pd-xl-x-40">
+            <div class="tab-content">
+              <div id="paneProfile" class="tab-pane active show">
+                <h6 class="tx-uppercase tx-semibold tx-color-01 mg-b-0">Your Profile Information</h6>
+                <hr>
+                <div class="form-settings">
+                  <div class="form-group">
+                        <div class="row row-sm">
+                                <div class="form-group col-sm-6">
+                                  <label>Fullname</label>
+                                  <input type="text" class="form-control" placeholder="Firstname">
+                                </div><!-- col -->
+                                <div class="form-group col-sm-6 d-flex align-items-end">
+                                  <input type="text" class="form-control" placeholder="Lastname">
+                                </div><!-- col -->
+                                
+                                <div class="form-group col-sm-6">
+                                        <label>Email</label>
+                                        <input type="text" class="form-control" placeholder="Firstname">
+                                      </div><!-- col -->
+                                      <div class="form-group col-sm-6 align-items-end">
+                                            <label>Username</label>
+                                        <input type="text" class="form-control" placeholder="Lastname">
+                                      </div><!-- col -->
+                                
+                              </div>
+                    
+                  </div><!-- form-group -->
+
+                  
+
+                  <div class="form-group tx-13 tx-color-04">
+                    All of the fields on this page are optional and can be deleted at any time, and by filling them out, you're giving us consent to share this data wherever your user profile appears.
+                  </div>
+
+                  <hr class="op-0">
+
+                  
+                </div>
+              </div><!-- tab-pane -->
+              <div id="paneAccount" class="tab-pane">
+                <h6 class="tx-uppercase tx-semibold tx-color-01 mg-b-0">Account Settings</h6>
+
+                <hr>
+                <div class="form-settings">
+                        
+                        <div class="form-group">
+                          <label class="form-label">Reset Password</label>
+                          
+                          <input type="text" class="form-control mg-t-5" placeholder="New password">
+                          <input type="text" class="form-control mg-t-5" placeholder="Confirm new password">
+                        </div><!-- form-group -->
+      
+                        <hr>
+      
+                        <div class="form-group">
+                                <label class="form-label">Last Login Details</label>
+                                <p class="tx-sm tx-color-03">This is a list of devices that have logged into your account. Revoke any sessions that you do not recognize.</p>
+          
+                                <ul class="list-group list-group-session">
+                                  <li class="list-group-item">
+                                    <div>
+                                      <h6>San Francisco City 190.24.335.55</h6>
+                                      <span>Your current session seen in United States</span>
+                                    </div>
+                                    
+                                  </li>
+                                </ul>
+                                <hr class="op-0">
+
+                                <button class="btn btn-brand-02">Update Profile &nbsp;</button>
+                                <button class="btn btn-white mg-l-2">Reset Changes</button>
+                              </div>
+                              <div class="form-group">
+                                    <label class="form-label text-danger">Freeze Account</label>
+                                    <p class="tx-sm tx-color-04">Once you suspend account temporarly.</p>
+                                    
+                                    <button class="btn btn-warning mg-l-2" >Freeze Account</button>
+                                  </div>
+                        <div class="form-group">
+                                <label class="form-label text-danger">Delete Account</label>
+                                <p class="tx-sm tx-color-04">Once you delete your account, there is no going back. Please be certain.</p>
+                                <button class="btn btn-danger">Delete Account&nbsp;</button>
+                                
+                              </div>
+                              
+                      </div>
+               
+                      
+              </div><!-- tab-pane -->
+            
+              <div id="paneActivity" class="tab-pane">
+                    <h6 class="tx-uppercase tx-semibold tx-color-01 mg-b-0">Account Activities</h6>
+    
+                    <hr>
+                   
+                            
+                            
+          
+          
+                            
+                                  
+                            <div class="col-md-12 col-xl-12">
+                                    <div class="card card-hover card-notification-one">
+                                      <div class="card-header bg-transparent pd-y-15 pd-l-15 pd-r-10">
+                                            <h6 class="card-title mg-b-0">All Activities</h6>
+                                       
+                                      </div><!-- card-header -->
+                                      <div class="card-body">
+                                        <ul class="list-group list-group-flush">
+                                          <li class="list-group-item">
+                                            <div class="avatar">
+                                              <span class="avatar-initial rounded-circle bg-pink"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock svg-14"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>
+                                            </div>
+                                            <div class="list-body">
+                                              <p class="mg-b-0">Add business hours to your <strong>Business Page</strong> so it's easy for people to plan a visit. <span>2 hours ago</span></p>
+                                            </div>
+                                            <nav class="nav">
+                                              <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg></a>
+                                            </nav>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="avatar">
+                                              <span class="avatar-initial rounded-circle bg-warning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar svg-16"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
+                                            </div>
+                                            <div class="list-body">
+                                              <p class="mg-b-0"><strong>Edsel Santillana</strong> invited you to join the event <strong>Annual Business Product Showcase</strong>. <span>Yesterday</span></p>
+                                            </div>
+                                            <nav class="nav">
+                                              <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg></a>
+                                            </nav>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="avatar">
+                                              <span class="avatar-initial rounded-circle bg-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar svg-16"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
+                                            </div>
+                                            <div class="list-body">
+                                              <p class="mg-b-0"><strong>Dyanne Aceron</strong> added some feedback to your event. <span>Yesterday</span></p>
+                                            </div>
+                                            <nav class="nav">
+                                              <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg></a>
+                                            </nav>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="avatar">
+                                              <span class="avatar-initial rounded-circle bg-blue"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag svg-16"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg></span>
+                                            </div>
+                                            <div class="list-body">
+                                              <p class="mg-b-0"><strong>Reynante Labares</strong> invited you to like his <strong>Online Shop</strong>. <span>Jul 31</span></p>
+                                            </div>
+                                            <nav class="nav">
+                                              <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg></a>
+                                            </nav>
+                                          </li>
+                                        </ul>
+                                      </div><!-- card-body -->
+                                      <div class="card-footer bg-transparent">
+                                        <a href="" class="link-03">Show All Notifications <i class="icon ion-android-arrow-forward"></i></a>
+                                      </div><!-- card-footer -->
+                                    </div><!-- card -->
+                                  </div>
+                                  
+                        
+                   
+                          
+                  </div>
+            </div><!-- tab-content -->
+          </div><!-- card -->
+        </div><!-- col -->
+      </div><!-- row -->
+    </div><!-- content-body -->
+
+  </div><!-- content -->
+
+  
+ 
+ 

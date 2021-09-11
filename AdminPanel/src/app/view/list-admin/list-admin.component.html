@@ -1,0 +1,60 @@
+<app-sidebar></app-sidebar>
+<div class="content content-page">
+  <app-header></app-header>
+  <div class="content-body">
+    <div class="d-flex align-items-center justify-content-between mg-b-15" style="margin-top:15px;">
+      <h6 class="tx-uppercase tx-bold tx-spacing-1 tx-13 mg-b-0">Admin List</h6>
+      <div class="search-form">
+        <input  class="form-control" placeholder="Search" (keyup)=searchAdmin($event.target.value)>
+        <button class="btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+      </div>
+    </div>
+    <div class="people-list people-list-two">
+      <div class="people-list-body">
+        <div class="row row-xs" *ngIf="adminList?.length>0">
+          <div class="col-3 mb-2" *ngFor="let admin of adminList">
+            <div class="card card-people-two">
+              <div class="card-header">
+                <div class="pos-absolute a-0">
+                    <!-- {{admin.name | slice:0:2 | uppercase}} -->
+                </div>
+                <div class="avatar avatar-md"><span class="avatar-initial rounded-circle bg-dark" alt="">{{admin?.name | uppercase | slice:0:2}}</span></div>
+              </div>
+              <div class="card-body">
+                <h5>{{admin.name}}</h5>
+                <h6>{{admin.role}}</h6>
+              </div>
+              <div class="card-footer d-flex" style="align-items: center;justify-content: center;">
+                <button class="btn btn-secondary tx-sm" (click)="changerole(admin._id)">Change to user</button>
+                <button class="btn btn-sm btn-danger m-2" (click)="deleteAdmin(admin._id)">Delete Admin</button>
+              </div><!-- card-footer -->
+            </div><!-- card -->
+          </div><!-- col -->
+        </div><!-- row -->
+      </div><!-- people-list-body -->
+      <div class="pb-0 pt-3">
+        <!-- <jw-pagination [items]="items" (changePage)="onChangePage($event)"></jw-pagination> -->
+    </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade effect-flip-horizontal" id="myModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Warning</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        Do you want to change this user's role
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal"
+          (click)="cofirmRole(userRole)">proceed</button>
+      </div>
+    </div>
+  </div>
+</div>

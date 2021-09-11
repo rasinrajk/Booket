@@ -1,0 +1,26 @@
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div>
+      <div class="sidebar-logo"><span>Admin Panel</span></div>
+      <small class="sidebar-logo-headline">Complete Admin solutions</small>
+    </div>
+  </div><!-- sidebar-header -->
+  <div id="dpSidebarBody" class="sidebar-body">
+    <ul class="nav nav-sidebar">
+
+      <li class="nav-item">
+          <a [routerLink]="['/dashboard']" class="nav-link" routerLinkActive="active" ><i class="fas fa-book-dead" aria-hidden="true"></i>Dashboard</a>
+      </li>
+      <li class="nav-item">
+          <a [routerLink]="['/listAdmin']" class="nav-link" routerLinkActive="active" *ngIf="userRole === 'superadmin'"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>All Admin</a>
+        </li>
+      <li class="nav-item">
+        <a [routerLink]="['/allUsers']"  class="nav-link" routerLinkActive="active" *ngIf="userRole === 'superadmin' || userRole === 'admin' "><i class="fas fa-users" aria-hidden="true"></i>Users</a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['/register']" class="nav-link" routerLinkActive="active" *ngIf="userRole === 'superadmin' || userRole === 'admin' "><i class="fas fa-user-plus" aria-hidden="true"></i>register</a>
+      </li>
+
+    </ul>
+</div><!-- sidebar-body -->
+</div><!-- sidebar -->

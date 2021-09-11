@@ -1,0 +1,29 @@
+{
+  "name": "apiexpress",
+  "version": "1.0.0",
+  "description": "Common Reusable Api",
+  "main": "app.js",
+  "scripts": {
+    "start": "env-cmd -f ./.env nodemon src/app.js"
+  },
+  "author": "Sulfikar,Razin",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.1.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "faker": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.7",
+    "nodemon": "^1.19.4",
+    "nox-emailer": "^1.0.5",
+    "qrcode": "^1.4.3",
+    "speakeasy": "^2.0.0",
+    "validator": "^12.0.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.0.1"
+  }
+}

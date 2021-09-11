@@ -1,0 +1,28 @@
+
+    <div class="forgot-panel">
+            <div class="forgot-body">
+             
+            </div>
+            <div class="forgot-sidebar">
+              <div class="forgot-sidebar-body">
+                <a href="#" class="sidebar-logo mg-b-40"><span>Admin Panel</span></a>
+                <h4 class="forgot-title">Enter Your OTP</h4>
+               
+                <form name="reset" [formGroup]="twofatctorLoginForm">
+                <div class="forgot-form mg-t-20">
+                  <div class="form-group">
+                    <label>Enter OTP</label>
+                    <input type="text" class="form-control" formControlName="userotp" required placeholder="Enter OTP" required>
+                    <app-control-messages [control]="twofatctorLoginForm.controls.userotp"></app-control-messages>
+                  </div>
+                </div>
+               
+                <div class="form-group">
+                  <button class="btn btn-block btn-brand-01 btn-uppercase" (click)="loginwithOTP()">Proceed</button>
+                </div>
+               
+              </form>
+              </div>
+            </div><!-- forgot-sidebar -->
+          </div><!-- forgot-panel -->
+    

@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import "./assets/css/main.css";
+@import "./assets/lib/select2/css/select2.min.css";
+/* @import "./assets/lib/fullcalendar/fullcalendar.min.css";
+@import "./assets/lib/quill/quill.snow.css";
+@import "./assets/lib/quill/quill.core.css"; */
+@import "./assets/lib/ionicons/css/ionicons.min.css";
+@import "./assets/lib/@fortawesome/fontawesome-free/css/all.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css"

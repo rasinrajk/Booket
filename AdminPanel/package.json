@@ -1,0 +1,67 @@
+{
+  "name": "admin-panel",
+  "version": "0.0.0",
+  "description": "Common angular utilities",
+  "main": "index.js",
+  "repository": "git@git.netobjex.com:NetObjex-Code-Snippets/angular-snippets.git",
+  "author": "Linto Thomas <linto@netobjex.com>, Rasin Raj <rasin.raj@netobjex.com>, Shiju S <shiju.ks@netobjex.com>, Sulfikkar N <sulfikkar.n@netobjex.com> ",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "component": "ng g c",
+    "service": "ng g s",
+    "pipe": "ng g p"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~8.2.7",
+    "@angular/common": "~8.2.7",
+    "@angular/compiler": "~8.2.7",
+    "@angular/core": "~8.2.7",
+    "@angular/forms": "~8.2.7",
+    "@angular/platform-browser": "~8.2.7",
+    "@angular/platform-browser-dynamic": "~8.2.7",
+    "@angular/router": "~8.2.7",
+    "bn-ng-idle": "^1.0.1",
+    "feather-icons": "^4.25.0",
+    "jw-paginate": "^1.0.4",
+    "ngx-sweetalert2": "^0.2.7",
+    "ngx-toastr": "^11.2.1",
+    "rxjs": "~6.4.0",
+    "sweetalert2": "^9.3.4",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.9.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.803.5",
+    "@angular/cli": "~8.3.5",
+    "@angular/compiler-cli": "~8.2.7",
+    "@angular/language-service": "~8.2.7",
+    "@types/jasmine": "~3.3.8",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
+    "codelyzer": "^5.0.0",
+    "husky": "^3.0.9",
+    "jasmine-core": "~3.4.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~4.1.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-jasmine": "~2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.0",
+    "protractor": "~5.4.0",
+    "ts-node": "~7.0.0",
+    "tslint": "~5.15.0",
+    "typescript": "~3.5.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint"
+    }
+  }
+}

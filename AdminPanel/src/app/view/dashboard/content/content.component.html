@@ -1,0 +1,74 @@
+<div class="content-body">
+  <div class="row row-sm">
+    <div class="col-sm-4 col-xl" *ngIf="userRole === 'superadmin' || userRole === 'admin' ">
+      <div class="card card-hover card-social-one">
+        <div class="card-body">
+          <div class="d-flex align-items-center justify-content-between mg-b-10">
+            <h1 class="card-value tx-primary count">{{totalUser}}</h1>
+            <div class="chart-wrapper">
+              <div id="flotChart1" class="flot-chart"></div>
+            </div>
+          </div>
+          <h5 class="card-title ">Total Users</h5>
+          <p class="card-desc">Total users enrolled.</p>
+        </div><!-- card-body -->
+      </div><!-- card -->
+    </div><!-- col -->
+    <div class="col-sm-4 col-xl mg-t-15 mg-sm-t-0" *ngIf="userRole === 'superadmin' || userRole === 'admin' ">
+      <div class="card card-hover card-social-one">
+        <div class="card-body">
+          <div class="d-flex align-items-center justify-content-between mg-b-10">
+            <h1 class="card-value tx-teal">{{totalLoggedInUser}}</h1>
+            <div class="chart-wrapper">
+              <div id="flotChart2" class="flot-chart"></div>
+            </div>
+          </div>
+          <h5 class="card-title ">Online Users</h5>
+          <p class="card-desc">Currently Active users.</p>
+        </div><!-- card-body -->
+      </div><!-- card -->
+    </div><!-- col -->
+    <div class="col-sm-4 col-xl mg-t-15 mg-sm-t-0" *ngIf="userRole === 'superadmin'">
+      <div class="card card-hover card-social-one">
+        <div class="card-body">
+          <div class="d-flex align-items-center justify-content-between mg-b-10">
+            <h1 class="card-value tx-pink">{{totalVarifiedUser}}</h1>
+            <div class="chart-wrapper">
+              <div id="flotChart2" class="flot-chart"></div>
+            </div>
+          </div>
+          <h5 class="card-title">Varified Users</h5>
+          <p class="card-desc">Currently Varified users.</p>
+        </div><!-- card-body -->
+      </div><!-- card -->
+    </div>
+    <div class="col-sm-4 col-xl mg-t-15 mg-sm-t-0" *ngIf="userRole === 'superadmin'">
+      <div class="card card-hover card-social-one">
+        <div class="card-body">
+          <div class="d-flex align-items-center justify-content-between mg-b-10">
+            <h1 class="card-value tx-primary">{{totalAdmin}}</h1>
+            <div class="chart-wrapper">
+              <div id="flotChart2" class="flot-chart"></div>
+            </div>
+          </div>
+          <h5 class="card-title ">Total Admin</h5>
+          <p class="card-desc">Total Admin Enrolled.</p>
+        </div><!-- card-body -->
+      </div><!-- card -->
+    </div>
+    <div class="col-sm-4 col-xl mg-t-15 mg-sm-t-0" *ngIf="userRole === 'superadmin'">
+      <div class="card card-hover card-social-one">
+        <div class="card-body">
+          <div class="d-flex align-items-center justify-content-between mg-b-10">
+            <h1 class="card-value tx-teal">{{totalAdminActive}}</h1>
+            <div class="chart-wrapper">
+              <div id="flotChart2" class="flot-chart"></div>
+            </div>
+          </div>
+          <h5 class="card-title ">Total Admin Active</h5>
+          <p class="card-desc">Currently Active Admin.</p>
+        </div><!-- card-body -->
+      </div><!-- card -->
+    </div>
+    
+</div><!-- content-body -->
